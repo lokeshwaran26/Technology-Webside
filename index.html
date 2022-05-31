@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="nav">
+            <div class="menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Process Capabilities</a>
+                <a href="#">Products</a>
+                <a href="#">Contact US</a>
+                <div class="searchBox">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+        <div class="trendingMovies movies">
+            <p>Aircraft</p>
+            <div class="cards">
+                <div class="card" data-text="Drone">
+                    <img src="F:\Aircraft\aircraft\WhatsApp Image 2022-05-27 at 12.18.59 PM (1).jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Passanger flight">
+                    <img src="F:\Aircraft\aircraft\WhatsApp Image 2022-05-27 at 12.26.05 PM (1).jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Fight Jet">
+                    <img src="F:\Aircraft\aircraft\WhatsApp Image 2022-05-27 at 12.40.24 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Two Passanger flight">
+                    <img src="F:\Aircraft\aircraft\WhatsApp Image 2022-05-27 at 12.40.25 PM (1).jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Flying Fight Jet">
+                    <img src="F:\Aircraft\aircraft\WhatsApp Image 2022-05-27 at 12.27.53 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Sky Flight">
+                    <img src="F:\Aircraft\aircraft\WhatsApp Image 2022-05-27 at 12.49.50 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Space Jet">
+                    <img src="F:\Aircraft\aircraft\WhatsApp Image 2022-05-27 at 12.49.08 PM.jpeg" alt="" >
+                </div>
+            </div>
+        </div>
+
+        <div class="bollywoodMovies movies">
+            <p>Electronics</p>
+            <div class="cards">
+                <div class="card" data-text="Circuits">
+                    <img src="F:\Aircraft\EEE\WhatsApp Image 2022-05-27 at 12.34.02 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="AWS Deep Racer">
+                    <img src="F:\Aircraft\EEE\WhatsApp Image 2022-05-27 at 12.29.31 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="CNC machines">
+                    <img src="F:\Aircraft\EEE\WhatsApp Image 2022-05-27 at 12.29.32 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Cars">
+                    <img src="F:\Aircraft\EEE\WhatsApp Image 2022-05-27 at 12.26.05 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Turbine">
+                    <img src="F:\Aircraft\EEE\WhatsApp Image 2022-05-27 at 12.34.01 PM (1).jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Wind Mill">
+                    <img src="F:\Aircraft\EEE\WhatsApp Image 2022-05-27 at 12.34.01 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Robotics">
+                    <img src= " F:\Aircraft\EEE\WhatsApp Image 2022-05-27 at 12.34.00 PM.jpeg "  alt="" >
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="webSeries movies">
+            <p>Space</p>
+            <div class="cards">
+                <div class="card" data-text="Outer Earth">
+                    <img src="F:\Aircraft\earth\WhatsApp Image 2022-05-27 at 12.18.59 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Milky way Galaxy">
+                    <img src="F:\Aircraft\earth\WhatsApp Image 2022-05-27 at 12.19.16 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Rocket">
+                    <img src="F:\Aircraft\earth\WhatsApp Image 2022-05-27 at 12.26.12 PM.jpeg" alt="" >
+                </div>
+                <div class="card" data-text="Black Hole">
+                    <img src="F:\Aircraft\earth\WhatsApp Image 2022-05-27 at 12.37.16 PM.jpeg" alt="" >
+                </div>
+            </div>
+        </div>
+        
+            
+    </div>
+    </div>
+
+
+    <script>
+        const a = document.querySelectorAll("a");
+
+        a.forEach(e => {
+            e.addEventListener("click", (e) => {
+                console.log(e.target.classList);
+                a.forEach(e => {
+                    e.classList.remove("active");
+                })
+                if (!(e.target.classList.contains("active"))) {
+                    e.target.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
